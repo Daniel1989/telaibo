@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stevens' Notebook</title>
+    <script src="https://cdn.twind.style" crossorigin></script>
+    <link
+      rel="icon"
+      href="/public/favicon.svg"
+      sizes="any"
+      type="image/svg+xml"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://esm.town/v/std/catch"></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      body {
+        background-color: #2d1700; /* Dark brown leather color */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #ffffff;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        font-family: "Pixelify Sans", sans-serif;
+        image-rendering: pixelated;
+      }
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 0;
+      }
+      /* For pixel art aesthetic */
+      * {
+        image-rendering: pixelated;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="root" class="relative z-10 w-full h-full"></main>
+    <script src="/public/index.tsx" type="module"></script>
+    <!-- View Source link will be injected by backend -->
+  </body>
+</html>
