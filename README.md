@@ -59,3 +59,7 @@ You'll need to set up some environment variables to make it run.
 **important caveat: the admin dashboard doesn't have auth! currently it just relies on security by obscurity of people not knowing the url to a private val. this is not very secure, if you put sensitive data in a database you should think carefully about how to secure it.**
 
 Overall it's a simple enough project that I encourage you to just copy the ideas and run in your own direction rather than try to use it as-is.
+
+
+## link
+https://www.geoffreylitt.com/2025/04/12/how-i-made-a-useful-ai-assistant-with-one-sqlite-table-and-a-handful-of-cron-jobs
